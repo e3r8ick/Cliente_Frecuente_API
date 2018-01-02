@@ -19,7 +19,7 @@ class methods
 
       //if saving was not successful, throw an exception
       if( $success === false ) {
-          throw new Exception('Failed to save todo item');
+          throw new Exception('Failed to save');
       }
 
       //return the array version
