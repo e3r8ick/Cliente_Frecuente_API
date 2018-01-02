@@ -3,7 +3,7 @@
 define('DATA_PATH', realpath(dirname(__FILE__).'/data'));
 
 //include our models
-include_once 'models/TodoItem.php';
+include_once 'models/methods.php';
 
 //wrap the whole thing in a try-catch block to catch any wayward exceptions!
 try {
@@ -16,7 +16,8 @@ try {
 
     //get the action and format it correctly so all the
     //letters are not capitalized, and append 'Action'
-    $action = strtolower($params['action']).'Action';
+    //$action = strtolower($params['action']).'Action';
+    $action = strtolower($params['action']);
 
     //check if the controller exists. if not, throw an exception
     if( file_exists("controllers/{$controller}.php") ) {
