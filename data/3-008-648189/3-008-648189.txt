@@ -1,1 +1,1 @@
-a:3:{s:6:"cedula";s:12:"3-008-648189";s:14:"puntos_activos";s:1:"0";s:17:"puntos_bloqueados";s:3:"120";}
+a:3:{s:6:"cedula";s:12:"3-008-648189";s:14:"PUNTOSOBT";s:1:"0";s:17:"PUNTOSTRA";s:3:"120";}

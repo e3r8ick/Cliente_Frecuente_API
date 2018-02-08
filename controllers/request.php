@@ -18,7 +18,7 @@ class Request
       $conexion = $con->get_Conexion();
 
       //consulta sql
-      $sql = "SELECT PUNTOS_ACTIVOS, PUNTOS_BLOQUEADOS FROM GEN_CLIENTE WHERE CEDULA = ?";
+      $sql = "SELECT PUNTOSOBT, PUNTOSTRA FROM FREPUNTOSV WHERE CLIENTE IN(SELECT COD_CLIENTE FROM GEN_CLIENTE WHERE CEDULA=?)";
 
       //se prepara el statement con la sentencia previamente creada
       $stmt = $conexion->prepare($sql);
@@ -46,8 +46,8 @@ class Request
       //definición
       $request = new methods();
       $request->cedula = $this->_params['cedula'];
-      $request->PuntosA = $result['PUNTOS_ACTIVOS'];
-      $request->PuntosB = $result['PUNTOS_BLOQUEADOS'];
+      $request->PuntosA = $result['PUNTOSOBT'];
+      $request->PuntosB = $result['PUNTOSTRA'];
 
       //pass the user's username and password to authenticate the user
       $request->save($this->_params['cedula']);

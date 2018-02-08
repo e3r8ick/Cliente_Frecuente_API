@@ -49,3 +49,4 @@ try {
 //echo the result of the API call
 echo json_encode($result);
 exit();
+//http://localhost/Cliente_Frecuente_API/?controller=request&action=getPuntos&cedula=207220864

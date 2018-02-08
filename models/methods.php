@@ -31,8 +31,8 @@ class methods
       //return an array version of the method
       return array(
           'cedula' => $this->cedula,
-          'puntos_activos' => $this->PuntosA,
-          'puntos_bloqueados' =>$this->PuntosB
+          'PUNTOSOBT' => $this->PuntosA,
+          'PUNTOSTRA' =>$this->PuntosB
       );
   }
 }
