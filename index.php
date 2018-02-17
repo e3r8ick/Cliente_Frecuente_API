@@ -50,4 +50,4 @@ try {
 echo json_encode($result);
 exit();
 //http://localhost/Cliente_Frecuente_API/?controller=request&action=getPuntos&cedula=207220864
-//http://localhost/Cliente_Frecuente_API/?controller=request&action=setCompra&cedula=207220864&puntos=12
+//localhost/Cliente_Frecuente_API/?controller=request&action=setCompra&cedula=207220864&puntos=12&fecha=02/03/18
